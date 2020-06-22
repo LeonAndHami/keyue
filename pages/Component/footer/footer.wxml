@@ -1,0 +1,14 @@
+<view class="footer">
+    <view 
+      wx:for="{{list}}" 
+      wx:index="idx" 
+      wx:for-item="item" 
+      wx:key="index" 
+      bindtap="goUrl" 
+      data-index="{{index}}" 
+      data-item="{{item}}"
+    >
+        <image src="{{ selected === index ? item.selectedIconPath:item.iconPath }}" />
+        <text class="{{ selected === index ? 'footerCur': '' }}">{{item.text}}</text>
+    </view>
+</view>

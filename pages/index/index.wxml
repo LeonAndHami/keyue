@@ -1,14 +1,87 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+	<!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-  <view>aaa</view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
+	<view class="header">
+		<view class="head_search_box">
+			<view>
+				<image src="" />
+				<input class="" placeholder="手机5折" />
+			</view>
+			<view class="head_fun_box">
+				<view>
+					<image src="" />
+					<text>折扣</text>
+				</view>
+				<view>
+					<image src="" />
+					<text>签到</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="article">
+		<view class="blannce">
+			<swiper indicator-dots="true" autoplay="true">
+				<block wx:for="{{blannceList}}" wx:for-item="item" wx:for-index="idx" wx:key="index">
+					<swiper-item>
+						<image src="{{ item }}" mode="scaleToFill" />
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+
+		<view class="user_info_container">
+			<view class="user_msg_A">
+				<image src="{{userInfo.avatarUrl}}" />
+				<view class="user_info">
+					<text>{{userInfo.nickName}}</text>
+					<text>223941244112</text>
+				</view>
+			</view>
+			<view class="user_msg_B">
+				<text>100积分</text>
+				<view>
+					<text>会员等级:</text>
+					<text>2</text>
+				</view>
+			</view>
+		</view>
+		<view class="nav">
+			<view class="navList" wx:for="{{navList}}" wx:for-item="item" wx:for-index="idx" wx:key="index">
+				<image src="{{item}}" />
+				<text>家庭用药</text>
+			</view>
+		</view>
+		<div class="product_content">
+			<view class="product_title">推荐</view>
+			<view class="goods_container">
+				<view class="goods_list" wx:for="{{productList}}" wx:for-item="item" wx:for-index="idx" wx:key="index">
+					<image src="../../{{item.img}}" />
+					<text>{{item.des}}</text>
+					<view class="price_box">
+						<view class="price">
+							<view class="price_box">
+								￥<text>{{item.price}}</text><text>.00</text>
+							</view>
+							<view class="point_box">
+								<text>{{item.point}}</text>
+								<text>积分</text>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+
+		</div>
+	</view>
+	<footer 
+		dataIndex="0"
+	>
+	</footer>
 </view>

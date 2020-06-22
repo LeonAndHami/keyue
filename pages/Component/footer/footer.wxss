@@ -1,0 +1,22 @@
+.footer{
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+  border-top:2rpx solid #f7f7f7;
+}
+.footer>view{
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size:24rpx;
+}
+.footer>view>image{
+  width:32rpx;
+  height:32rpx;
+}
+
+.footerCur{
+  color:red;
+}

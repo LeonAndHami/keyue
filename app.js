@@ -5,7 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+   
     // 登录
     wx.login({
       success: res => {
@@ -34,6 +34,19 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    tarBar_idx:0,
+    pageRoute:'pages/index/index'
+  },
+  onLoad(){
+    let routePage = this.globalData.pageRoute
+    if( routePage == "pages/index/index" ){
+      app.globalData.tarBar_idx = 0
+    }else if( routePage == "pages/personal/index" ){
+      app.globalData.tarBar_idx = 3
+    }
+  },
+  tarBar_handle(url){
+     
   }
 })

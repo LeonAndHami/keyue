@@ -1,0 +1,3 @@
+<view class="container">
+   <button bindtap="userInfo" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权</button>
+</view>

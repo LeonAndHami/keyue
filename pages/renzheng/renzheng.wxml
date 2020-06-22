@@ -1,0 +1,20 @@
+<view class="container">
+	<view class="article">
+		<view class="renzheng_icon">
+			<image src="../../image/viprenzheng.png" />
+		</view>
+		<view class="renzheng_container">
+			<view class="user_phone">
+				<view>手机：</view>
+				<input bindinput="getUserPhone" type="number" value="{{userPhone}}" placeholder="请输入手机号码" />
+			</view>
+			<view class="user_name">
+				<view>用户名：</view>
+				<input bindinput="getUserName" value="{{userName}}" placeholder="请输入姓名" />
+			</view>
+		</view>
+		<view class="btn_box">
+			 <button bindtap="userInfo" open-type="getUserInfo" >认证</button>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/personal/index.wxss */
+.container{
+  /* width: 100%;
+  height:100vh;
+  overflow: hidden; */
+}
+.user_container {
+  display: flex;
+  height: 180rpx;
+  flex-direction: row;
+  align-items: center;
+  padding: 40rpx;
+  background: #f5351b;
+  color:white;
+  font-size:28rpx;
+}
+.user_container>image {
+  width: 100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  margin-right:40rpx;
+}
+.article{
+  height: calc(100vh - 365rpx );
+}
+.nav_list_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav_list{
+  width: 33%;
+  height: 160rpx;
+  display: flex;
+  font-size:24rpx;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2rpx solid #f7f7f7;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.nav_list>image{
+  width:40rpx;
+  height:40rpx;
+}

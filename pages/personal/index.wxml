@@ -1,0 +1,39 @@
+<!--pages/personal/index.wxml-->
+<view class="container">
+	<view class="header">
+		<view  class="user_container">
+				<image src="{{userInfo.avatarUrl}}" />
+				<view class="userInfo">
+						<text>{{userInfo.nickName}}</text>
+						<view >
+								<text>会员等级：</text>
+								<text>2</text>
+						</view >
+						<view>
+								<text>卡号：</text>
+								<text>123401948809813</text>
+						</view >
+				</view >
+		</view >
+	</view>
+	<view class="article">
+		<view class="nav_list_container">
+			<view 
+				class="nav_list" 
+				wx:for="{{listData}}" 
+				wx:for-item="item" 
+				wx:for-index="idx" 
+				wx:key="index"
+				data-path="{{item.path}}"
+				bindtap="goUrl"
+			>
+				<image src="{{item.icon}}"/>
+				<text>{{item.text}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+<footer 
+	dataIndex="3"
+>
+</footer>

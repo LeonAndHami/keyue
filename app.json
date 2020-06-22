@@ -1,13 +1,50 @@
 {
-  "pages":[
+  "pages": [
+    "pages/renzheng/renzheng",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/shouquan/index",
+    "pages/logs/logs",
+    "pages/personal/index",
+    "pages/address/address"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/homeCur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shouquan/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/homeCur.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shouquan/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/homeCur.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "iconPath": "image/my1.png",
+        "selectedIconPath": "image/homeCur.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

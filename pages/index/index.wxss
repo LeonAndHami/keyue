@@ -1,5 +1,5 @@
 /**index.wxss**/
-.userinfo {
+/* .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,4 +18,243 @@
 
 .usermotto {
   margin-top: 200px;
+} */
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height:84rpx;
+  background: #e93b3d;
+  position: relative;
+}
+
+.head_search_box {
+  display: flex;
+  padding: 8rpx 20rpx;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_search_box>view:first-child {
+  width: 75%;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s linear;
+  border-radius: 40rpx;
+  padding-left: 10rpx;
+}
+
+.head_search_box>view:first-child>input {
+  width: 80%;
+  height: 60rpx;
+  font-size: 28rpx;
+  background: none;
+}
+
+.head_search_box>view>image,
+.seach_head>view>image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.head_fun_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24rpx;
+  color: white;
+}
+
+.head_fun_box>view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10rpx;
+}
+
+.head_fun_box image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.article{
+  width: 100%;
+  height:calc( 100vh - (102rpx + 84rpx) );
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: #f7f7f7;
+}
+
+.blannce {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.blannce::after {
+  content: '';
+  width: 140%;
+  height: 240rpx;
+  position: absolute;
+  left: -20%;
+  top: -4rpx;
+  border-radius: 0 0 50% 50%;
+  background: #e93b3d;
+}
+
+.blannce>swiper {
+  position: relative;
+  z-index: 2;
+}
+
+.blannce image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+
+.user_info_container {
+  width: 90%;
+  margin: 20rpx auto;
+  padding: 10rpx 12rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffdbd8;
+  border-radius: 80rpx;
+  font-size: 28rpx;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.user_msg_A,
+.user_info,
+.user_msg_B {
+  display: flex;
+}
+
+.user_msg_A {
+  align-items: center;
+}
+
+.user_msg_B {
+  flex-direction: column;
+  margin-right: 20rpx;
+  text-align: right;
+  color: #e49526;
+}
+
+.user_msg_A>image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.user_info {
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10rpx 0;
+}
+
+.navList {
+  width: 20%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.navList>image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.product_content>.product_title {
+  position: relative;
+  font-size: 32rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.product_content>.product_title::before,
+.product_content>.product_title::after {
+  content: '';
+  width: 40rpx;
+  height: 2rpx;
+  background: #999;
+  margin: 0 20rpx;
+}
+
+.goods_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 10rpx;
+}
+
+.goods_list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: white;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+
+.goods_list:nth-child(odd) {
+  width: calc(50% - 10rpx);
+  margin-right: 10rpx;
+}
+
+.goods_list>image {
+  width: 100%;
+  height: 352rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
+
+.goods_list>text {
+  padding: 8rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.price_box {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #e93b3d;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding:10rpx;
 }

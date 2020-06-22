@@ -1,0 +1,38 @@
+.renzheng_icon{
+  text-align: center;
+}
+.renzheng_icon>image{
+  width:360rpx;
+  height:360rpx;
+}
+.renzheng_container{
+  margin-top:40rpx;
+}
+.renzheng_container>view{
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.renzheng_container>view>view{
+  width:120rpx;
+  text-align: right;
+}
+.btn_box{
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+}
+.btn_box>button{
+  display: flex;
+  width: 90%;
+  height: 80rpx;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rpx;
+  background:#e93b3d;
+  font-size: 28rpx;
+}
